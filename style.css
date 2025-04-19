@@ -75,7 +75,7 @@ p{
     width: 250px;
     height: 100vh;
     position: fixed;
-    right: 0;
+    right: -250px;
     top: 0;
     background: #f67c92;
     z-index: 2;
@@ -88,4 +88,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+
 }
