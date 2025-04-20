@@ -39,19 +39,80 @@
   </nav>  
 <img src="images/menu.png" id="menuBtn">
 
+<!----About-->
+
+<section class="about">
+    <div class="about-left-col">
+        <img src="images/about.png">
+    </div>
+    <div class="about-right-col">
+        <div class="about-text">
+        <h1>About Us</h1>
+        <span class="square"></span>
+        <p>Country to belief, Lorem Ipsum is not simply 
+            random text.It has roots in a piece of classical Lati 
+            literature from 45 BC, making it over 2000 years old.
+            Richard McClintok, a Latin professor at Hampden-Sydney 
+            College in virginia, looked up one of the more obscure
+            Latin words, consectetur, from a Lorem Ipsum passage, and 
+            going through the cites of the world in classical literature, 
+            discovered the undoubtable source.</p><br><br>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+
+            <h2>"Learning is not attained by chance , it must be sought 
+                for with ardor and attended to with diligence"
+            </h2>
+            <h3>----Abigail Adams</h3>
+    </div>
+</div>
+
+</section>
+
+<!--features-->
+
+<section class="features">
+    <div class="feature-row">
+        <div class="feature-col">
+            <img src="images/pic-1.png" >
+            <h4>Learn Anywhere</h4>
+            <p>Switch between your computer, tablet or mobile 
+                device
+            </p>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic-2.png" >
+            <h4>Exper Teachers</h4>
+            <p>Learn from industry experts who are passionate
+                about teaching
+            </p>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic-3.png" >
+            <h4>Unlimited Access</h4>
+            <p>Choose what you'd like to learn from our extensive
+                subscription library.
+            </p>
+        </div>
+    </div>
+</section>
+
 <script>
     var menuBtn = document.getElementById("menuBtn");
     var sideNav = document.getElementById("sideNav");
 
-    // Initially, set the sideNav position to hidden
+    
     sideNav.style.right = "-250px";
 
-    // Add a click event listener to toggle the sideNav
+
     menuBtn.onclick = function() {
         if (sideNav.style.right === "0px") {
-            sideNav.style.right = "-250px"; // Close the menu
+            sideNav.style.right = "-250px"; 
         } else {
-            sideNav.style.right = "0px"; // Open the menu
+            sideNav.style.right = "0px"; 
         }
     };
 </script>
