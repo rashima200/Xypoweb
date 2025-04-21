@@ -1,77 +1,101 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
-#header{
+
+/* Header Section */
+#header {
     height: 100vh;
     background-image: url(images/background.png);
     background-position: center;
     background-size: cover;
+    position: relative;
 }
-.container{
-    margin-right: 100px;
-    margin-left: 100px;
+
+.container {
+    margin: 0 auto;
+    padding: 0 100px;
 }
-.logo{
+
+.logo {
     margin-top: 30px;
     width: 100px;
-
 }
-.header-text{
+
+.header-text {
     max-width: 350px;
     margin-top: 140px;
+    color: #333;
 }
-h1{
+
+h1 {
     font-size: 34px;
+    line-height: 1.4;
 }
-.square{
+
+.square {
     height: 12px;
     width: 12px;
     display: inline-block;
     background: #f67c92;
     margin: 15px 0;
 }
-.common-btn{
+
+.common-btn {
     padding: 18px 40px;
     background: transparent;
     outline: none;
     border: 2px solid #f67c92;
     font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s, color 0.3s;
 }
-p{
-    font-size: 15px;
-    line-height: 18px;
-    color: #777;
 
+.common-btn:hover {
+    background: #f67c92;
+    color: #fff;
 }
-.header-text button{
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #777;
+}
+
+.header-text button {
     margin-top: 20px;
     margin-bottom: 60px;
 }
-.line-1{
+
+.line {
+    line-height: 8px;
+}
+
+.line-1 {
     width: 15px;
     height: 15px;
     background: #f67c92;
     display: inline-block;
 }
-.line-2{
+
+.line-2, .line-3 {
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+
+.line-2 {
     width: 80px;
-    height: 1px;
-    background: #f67c92;
-    display: inline-block;
 }
-.line-3{
+
+.line-3 {
     width: 60px;
-    height: 1px;
-    background: #f67c92;
-    display: inline-block;
 }
-.line{
-    line-height: 8px;
-}
-#sideNav{
+
+/* Side Navigation */
+#sideNav {
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -79,66 +103,84 @@ p{
     top: 0;
     background: #f67c92;
     z-index: 2;
-    transition: .5s;
-
+    transition: 0.5s;
 }
+
 nav ul li {
     list-style: none;
     margin: 50px 20px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
 }
-#menuBtn{
+
+nav ul li a:hover {
+    color: #333;
+}
+
+#menuBtn {
     width: 50px;
     position: fixed;
     right: 65px;
     top: 35px;
     z-index: 2;
     cursor: pointer;
-
 }
-/*----about----*/
 
-#about, #offer{
+/* About Section */
+#about, #offer {
     padding: 100px 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #f9f9f9;
 }
-.about-left-col {
+
+.about-left-col, .about-right-col {
     flex-basis: 50%;
+    padding: 20px;
 }
+
 .about-left-col img {
     width: 100%;
+    border-radius: 10px;
 }
-.about-right-col{
-    flex-basis: 50%;
+
+.about-right-col {
     text-align: right;
 }
-.about-text{
+
+.about-text {
     max-width: 500px;
     margin-right: 100px;
     display: inline-block;
 }
-.about-text h2{
+
+.about-text h2, .about-text h3 {
+    font-style: italic;
+}
+
+.about-text h2 {
     margin: 50px 0 10px;
     font-size: 28px;
-    font-style: italic;
 }
-.about-text h3{
 
+.about-text h3 {
     font-size: 20px;
-    font-style: italic;
     color: #797979;
 }
-/*--features--*/
-#features{
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+/* Features Section */
+#features {
+    padding: 50px 0;
+    background-color: #fff;
 }
-.feature-row{
+
+.feature-row {
     width: 80%;
     margin: auto;
     display: flex;
@@ -146,31 +188,37 @@ nav ul li a {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .feature-col {
     flex-basis: 25%;
     text-align: center;
+    margin: 10px 0;
 }
+
 .feature-col img {
     width: 100%;
-}
-.feature-col h4{
+    max-width: 150px;
     margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 400;
 }
-.feature-btn{
+
+.feature-col h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.feature-btn {
     margin: 80px auto 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
+
 .feature-btn .line {
     text-align: right;
     display: inline-block;
     margin-right: 25px;
 }
-
-
 
 /*--courses--*/
 
@@ -198,4 +246,18 @@ nav ul li a {
 }
 .course-text button{
      margin: 30px 0;
+}
+/* Offer Section */
+#offer {
+    background: #f7f7f7;
+    text-align: center;
+}
+
+#offer button {
+    margin: 30px 0;
+}
+
+#offer .about-left-col img {
+    max-width: 100%;
+    border-radius: 10px;
 }
