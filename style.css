@@ -409,5 +409,10 @@ hr{
         padding: 10px 16px;
        
     }
+    .social-icons img{
+        width: 14px;
+        margin: 15px auto;
+        
+    }
     
 }
