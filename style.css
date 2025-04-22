@@ -401,5 +401,13 @@ hr{
         font-size: 25px;
     
     }
+    #menuBtn {
+        width: 40px;
+        right: 50px;
+    }
+    .common-btn {
+        padding: 10px 16px;
+       
+    }
     
 }
