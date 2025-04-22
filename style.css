@@ -373,3 +373,33 @@ hr{
     margin: 0 auto 20px;
     cursor: pointer;
 }
+
+
+
+
+@media only screen and (max-width: 770px){
+    #header{
+        background-image: none;
+    }
+    .container {
+        margin: 0 auto;
+        padding: 0 100px;
+    }
+    
+    .logo {
+        margin-top: 27px;
+        width: 70px;
+    }
+    
+    .header-text {
+       
+        margin-top: 100px;
+        
+    }
+    
+    h1 {
+        font-size: 25px;
+    
+    }
+    
+}
