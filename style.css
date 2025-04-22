@@ -424,4 +424,16 @@ hr{
     .about-text h2{
         font-size: 18px;
     }
-}
+    .feature-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .course-left-col{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    .course-right-col img{
+        width: 100%;
+    }
+}   
